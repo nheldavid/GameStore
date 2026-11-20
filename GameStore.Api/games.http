@@ -8,22 +8,25 @@ POST http://localhost:5039/games
 Content-Type: application/json
 
 {
-    "name": "Super Mario Bros. Wonder",
-    "genre": "Platformer",
-    "price": 159.99,
-    "releaseDate": "2023-10-20"
-}
-
-###
-PUT http://localhost:5039/games/5
-Content-Type: application/json
-
-{
-    "name": "Street Fighter II Turbo",
-    "genre": "",
+    "name": "Test Game",
+    "genreId": 1,
     "price": 9.99,
     "releaseDate": "1992-07-15"
 }
 
 ###
-DELETE http://localhost:5039/games/1
+PUT http://localhost:5039/games/2
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genreId": "1",
+    "price": 19.99,
+    "releaseDate": "1992-01-20"
+}
+
+###
+DELETE http://localhost:5039/games/4
+
+###
+GET http://localhost:5039/genres
